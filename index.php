@@ -19,7 +19,7 @@
             ?>"<?php
 
             if( $current_page )
-            echo ' class="menu_item">';
+            echo ' class="menu_item active">';
             echo $name;
             ?></a>
 
