@@ -111,6 +111,18 @@
                 <td>10$</td>
                 <td>100$</td>
             </tr>
+            <?php echo '
+            <tr>
+                <td>Ячейка 1</td>
+                <td>Ячейка 2</td>
+                <td>Ячейка 3</td>
+            </tr>';
+            ?>
+            <tr>
+                <td><?php echo 'Ячейка 3'; ?></td>
+                <td><?php echo 'Ячейка 4'; ?></td>
+                <td><?php echo 'Ячейка 5'; ?></td>
+            </tr>
         </table>
     </section>
     <footer>
