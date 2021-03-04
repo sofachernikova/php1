@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet"> 
-    <title>About</title>
+    <title><?php $title='About'; echo $title;?></title>
 </head>
 <body>
     <header>
@@ -50,7 +50,16 @@
     </header>
     <section class="about">
         <div class="image_wrapper">
-            <img class="porter" src="img/moving-boxes-3174791_1920.jpg" alt="">
+            <!-- <img class="porter" src="img/moving-boxes-3174791_1920.jpg" alt=""> -->
+
+            <?php
+                if (date('s') % 2 === 0)
+                $name = 'img/heavy';
+                else
+                $name = 'img/opening-time';
+
+                echo '<img src="' . $name . '.png" alt="Меняющаяся фотография">';
+            ?>
         </div>
         <div class="text_wrapper">
             <h1 class="title">About our company</h1>
@@ -58,7 +67,7 @@
         </div>
     </section>
     <footer>
-        <p>Copyright © 2020 All Rights Reserved</p>
+        <p>Сформировано <?php echo date('d.m.Y в H-i:s')?></p>
     </footer>
 </body>
 </html>

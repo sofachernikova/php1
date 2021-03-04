@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet"> 
-    <title>Черникова Софья Кирилловна. Лабораторная работа 1 Конвертация статического контента в динамический</title>
+    <title><?php $title='Черникова Софья Кирилловна. Лабораторная работа 1 Конвертация статического контента в динамический'; echo $title;?></title>
 </head>
 <body>
     <header>
@@ -114,7 +114,7 @@
         </table>
     </section>
     <footer>
-        <p>Copyright © 2020 All Rights Reserved</p>
+        <p>Сформировано <?php echo date('d.m.Y в H-i:s')?></p>
     </footer>
 </body>
 </html>

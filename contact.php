@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet"> 
-    <title>Contact</title>
+    <title><?php $title='Contact'; echo $title;?></title>
+
 </head>
 <body>
     <header>
@@ -57,7 +58,7 @@
         </form>
     </section>
     <footer>
-        <p>Copyright © 2020 All Rights Reserved</p>
+        <p>Сформировано <?php echo date('d.m.Y в H-i:s')?></p>
     </footer>
 </body>
 </html>
